@@ -32,8 +32,8 @@
     _scrollView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     _scrollView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     _scrollView.alwaysBounceVertical = YES;
-    _scrollView.contentInset = UIEdgeInsetsMake(-10, 0, CGRectGetHeight(_inputBar.frame), 0);
     [self.view addSubview:_scrollView];
+    [self updateEdgeInsets];
     
     _textWindow = [[UILabel alloc] initWithFrame:_scrollView.bounds];
     _textWindow.numberOfLines = 0;
@@ -45,6 +45,9 @@
     __weak typeof(self) weakSelf = self;
     [_inputBar setDidSendClicked:^(NSString *text) {
         [weakSelf updateMessage:text];
+    }];
+    [_inputBar setInputBarSizeChangedHandle:^{
+        [weakSelf updateEdgeInsets];
     }];
     
     _names = @[@"小明",@"老师"];
@@ -82,6 +85,10 @@
     _scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.view.frame), CGRectGetHeight(_textWindow.frame));
     
     _textWindow.tag = (_textWindow.tag+1)%_names.count;
+}
+
+- (void)updateEdgeInsets{
+    _scrollView.contentInset = UIEdgeInsetsMake(-10, 0, CGRectGetHeight(_inputBar.frame)+10, 0);
 }
 
 - (NSString *)time{

@@ -18,4 +18,6 @@
 
 @property (copy, nonatomic) NSString *placeHolder;
 
+- (void)setInputBarSizeChangedHandle:(void(^)())handler;
+
 @end

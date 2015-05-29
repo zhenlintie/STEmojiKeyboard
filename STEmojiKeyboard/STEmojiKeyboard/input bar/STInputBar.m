@@ -25,6 +25,7 @@
 @property (strong, nonatomic) UILabel *placeHolderLabel;
 
 @property (strong, nonatomic) void (^sendDidClickedHandler)(NSString *);
+@property (strong, nonatomic) void (^sizeChangedHandler)();
 
 @end
 
@@ -97,6 +98,7 @@
     [self addSubview:_textView];
     [self addSubview:_placeHolderLabel];
     [self addSubview:self.sendButton];
+    
 }
 
 - (void)layout{
@@ -120,6 +122,10 @@
     
     self.keyboardTypeButton.center = CGPointMake(CGRectGetMidX(self.keyboardTypeButton.frame), CGRectGetHeight(addBarFrame)/2.0f);
     self.sendButton.center = CGPointMake(CGRectGetMidX(self.sendButton.frame), CGRectGetHeight(addBarFrame)/2.0f);
+    
+    if (self.sizeChangedHandler){
+        self.sizeChangedHandler();
+    }
 }
 
 #pragma mark - public
@@ -142,6 +148,10 @@
 
 - (void)setDidSendClicked:(void (^)(NSString *))handler{
     _sendDidClickedHandler = handler;
+}
+
+- (void)setInputBarSizeChangedHandle:(void (^)())handler{
+    _sizeChangedHandler = handler;
 }
 
 - (void)setFitWhenKeyboardShowOrHide:(BOOL)fitWhenKeyboardShowOrHide{
