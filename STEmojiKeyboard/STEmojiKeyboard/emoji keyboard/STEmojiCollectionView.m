@@ -325,7 +325,6 @@
 }
 
 - (void)touchDidEnd{
-    
     if (!_inScolling){
         [self getEmojiFromCurrentLocation:^(CGPoint emojiCenterInSelf, NSString *emoji) {
             //            NSLog(@"结束点击: %@",emoji);

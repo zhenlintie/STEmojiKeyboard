@@ -22,6 +22,12 @@
 		9C6FCCD71B181C920027305B /* STEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCD61B181C920027305B /* STEmoji.m */; };
 		9C6FCCDA1B181CA60027305B /* STEmojiKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCD91B181CA60027305B /* STEmojiKeyboard.m */; };
 		9C6FCCDD1B181CCA0027305B /* STEmojiCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCDC1B181CCA0027305B /* STEmojiCollectionView.m */; };
+		9C6FCCED1B1872200027305B /* btn_expression@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCE91B1872200027305B /* btn_expression@2x.png */; };
+		9C6FCCEE1B1872200027305B /* btn_expression@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCEA1B1872200027305B /* btn_expression@3x.png */; };
+		9C6FCCEF1B1872200027305B /* btn_keyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCEB1B1872200027305B /* btn_keyboard@2x.png */; };
+		9C6FCCF01B1872200027305B /* btn_keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCEC1B1872200027305B /* btn_keyboard@3x.png */; };
+		9C6FCCF31B1872550027305B /* STInputBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCF21B1872550027305B /* STInputBar.m */; };
+		9C6FCCF61B1872AA0027305B /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCF51B1872AA0027305B /* DemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,14 @@
 		9C6FCCD91B181CA60027305B /* STEmojiKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEmojiKeyboard.m; sourceTree = "<group>"; };
 		9C6FCCDB1B181CCA0027305B /* STEmojiCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEmojiCollectionView.h; sourceTree = "<group>"; };
 		9C6FCCDC1B181CCA0027305B /* STEmojiCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEmojiCollectionView.m; sourceTree = "<group>"; };
+		9C6FCCE91B1872200027305B /* btn_expression@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_expression@2x.png"; sourceTree = "<group>"; };
+		9C6FCCEA1B1872200027305B /* btn_expression@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_expression@3x.png"; sourceTree = "<group>"; };
+		9C6FCCEB1B1872200027305B /* btn_keyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_keyboard@2x.png"; sourceTree = "<group>"; };
+		9C6FCCEC1B1872200027305B /* btn_keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_keyboard@3x.png"; sourceTree = "<group>"; };
+		9C6FCCF11B1872550027305B /* STInputBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STInputBar.h; sourceTree = "<group>"; };
+		9C6FCCF21B1872550027305B /* STInputBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STInputBar.m; sourceTree = "<group>"; };
+		9C6FCCF41B1872AA0027305B /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		9C6FCCF51B1872AA0027305B /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,14 +114,11 @@
 		9C6FCCA21B1818750027305B /* STEmojiKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				9C6FCCE71B1872200027305B /* input bar */,
 				9C6FCCC91B181C7F0027305B /* emoji keyboard */,
-				9C6FCCA71B1818750027305B /* AppDelegate.h */,
-				9C6FCCA81B1818750027305B /* AppDelegate.m */,
-				9C6FCCAA1B1818750027305B /* ViewController.h */,
-				9C6FCCAB1B1818750027305B /* ViewController.m */,
-				9C6FCCAD1B1818750027305B /* Main.storyboard */,
-				9C6FCCB01B1818750027305B /* Images.xcassets */,
-				9C6FCCB21B1818750027305B /* LaunchScreen.xib */,
+				9C6FCCF41B1872AA0027305B /* DemoViewController.h */,
+				9C6FCCF51B1872AA0027305B /* DemoViewController.m */,
+				9C6FCCF71B1872BA0027305B /* resources */,
 				9C6FCCA31B1818750027305B /* Supporting Files */,
 			);
 			path = STEmojiKeyboard;
@@ -163,6 +174,41 @@
 				9C6FCCCF1B181C7F0027305B /* keyboard_preview_bg@3x.png */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		9C6FCCE71B1872200027305B /* input bar */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FCCE81B1872200027305B /* res */,
+				9C6FCCF11B1872550027305B /* STInputBar.h */,
+				9C6FCCF21B1872550027305B /* STInputBar.m */,
+			);
+			path = "input bar";
+			sourceTree = "<group>";
+		};
+		9C6FCCE81B1872200027305B /* res */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FCCE91B1872200027305B /* btn_expression@2x.png */,
+				9C6FCCEA1B1872200027305B /* btn_expression@3x.png */,
+				9C6FCCEB1B1872200027305B /* btn_keyboard@2x.png */,
+				9C6FCCEC1B1872200027305B /* btn_keyboard@3x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		9C6FCCF71B1872BA0027305B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FCCA71B1818750027305B /* AppDelegate.h */,
+				9C6FCCA81B1818750027305B /* AppDelegate.m */,
+				9C6FCCAA1B1818750027305B /* ViewController.h */,
+				9C6FCCAB1B1818750027305B /* ViewController.m */,
+				9C6FCCAD1B1818750027305B /* Main.storyboard */,
+				9C6FCCB01B1818750027305B /* Images.xcassets */,
+				9C6FCCB21B1818750027305B /* LaunchScreen.xib */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,12 +293,16 @@
 			files = (
 				9C6FCCAF1B1818750027305B /* Main.storyboard in Resources */,
 				9C6FCCD11B181C7F0027305B /* keyboard_btn_delete@2x.png in Resources */,
+				9C6FCCED1B1872200027305B /* btn_expression@2x.png in Resources */,
 				9C6FCCD41B181C7F0027305B /* keyboard_preview_bg@3x.png in Resources */,
 				9C6FCCD31B181C7F0027305B /* keyboard_preview_bg@2x.png in Resources */,
 				9C6FCCD21B181C7F0027305B /* keyboard_btn_delete@3x.png in Resources */,
+				9C6FCCEE1B1872200027305B /* btn_expression@3x.png in Resources */,
 				9C6FCCB41B1818750027305B /* LaunchScreen.xib in Resources */,
 				9C6FCCD01B181C7F0027305B /* emoji.json in Resources */,
+				9C6FCCF01B1872200027305B /* btn_keyboard@3x.png in Resources */,
 				9C6FCCB11B1818750027305B /* Images.xcassets in Resources */,
+				9C6FCCEF1B1872200027305B /* btn_keyboard@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +322,8 @@
 			files = (
 				9C6FCCDD1B181CCA0027305B /* STEmojiCollectionView.m in Sources */,
 				9C6FCCDA1B181CA60027305B /* STEmojiKeyboard.m in Sources */,
+				9C6FCCF31B1872550027305B /* STInputBar.m in Sources */,
+				9C6FCCF61B1872AA0027305B /* DemoViewController.m in Sources */,
 				9C6FCCAC1B1818750027305B /* ViewController.m in Sources */,
 				9C6FCCA91B1818750027305B /* AppDelegate.m in Sources */,
 				9C6FCCA61B1818750027305B /* main.m in Sources */,
@@ -472,6 +524,7 @@
 				9C6FCCC51B1818750027305B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C6FCCC61B1818750027305B /* Build configuration list for PBXNativeTarget "STEmojiKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +533,7 @@
 				9C6FCCC81B1818750027305B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
