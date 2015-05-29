@@ -14,6 +14,14 @@
 		9C6FCCB11B1818750027305B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCB01B1818750027305B /* Images.xcassets */; };
 		9C6FCCB41B1818750027305B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCB21B1818750027305B /* LaunchScreen.xib */; };
 		9C6FCCC01B1818750027305B /* STEmojiKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCBF1B1818750027305B /* STEmojiKeyboardTests.m */; };
+		9C6FCCD01B181C7F0027305B /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCCB1B181C7F0027305B /* emoji.json */; };
+		9C6FCCD11B181C7F0027305B /* keyboard_btn_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCCC1B181C7F0027305B /* keyboard_btn_delete@2x.png */; };
+		9C6FCCD21B181C7F0027305B /* keyboard_btn_delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCCD1B181C7F0027305B /* keyboard_btn_delete@3x.png */; };
+		9C6FCCD31B181C7F0027305B /* keyboard_preview_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCCE1B181C7F0027305B /* keyboard_preview_bg@2x.png */; };
+		9C6FCCD41B181C7F0027305B /* keyboard_preview_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6FCCCF1B181C7F0027305B /* keyboard_preview_bg@3x.png */; };
+		9C6FCCD71B181C920027305B /* STEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCD61B181C920027305B /* STEmoji.m */; };
+		9C6FCCDA1B181CA60027305B /* STEmojiKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCD91B181CA60027305B /* STEmojiKeyboard.m */; };
+		9C6FCCDD1B181CCA0027305B /* STEmojiCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FCCDC1B181CCA0027305B /* STEmojiCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,17 @@
 		9C6FCCB91B1818750027305B /* STEmojiKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STEmojiKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6FCCBE1B1818750027305B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6FCCBF1B1818750027305B /* STEmojiKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STEmojiKeyboardTests.m; sourceTree = "<group>"; };
+		9C6FCCCB1B181C7F0027305B /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
+		9C6FCCCC1B181C7F0027305B /* keyboard_btn_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_btn_delete@2x.png"; sourceTree = "<group>"; };
+		9C6FCCCD1B181C7F0027305B /* keyboard_btn_delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_btn_delete@3x.png"; sourceTree = "<group>"; };
+		9C6FCCCE1B181C7F0027305B /* keyboard_preview_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_preview_bg@2x.png"; sourceTree = "<group>"; };
+		9C6FCCCF1B181C7F0027305B /* keyboard_preview_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboard_preview_bg@3x.png"; sourceTree = "<group>"; };
+		9C6FCCD51B181C920027305B /* STEmoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEmoji.h; sourceTree = "<group>"; };
+		9C6FCCD61B181C920027305B /* STEmoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEmoji.m; sourceTree = "<group>"; };
+		9C6FCCD81B181CA60027305B /* STEmojiKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEmojiKeyboard.h; sourceTree = "<group>"; };
+		9C6FCCD91B181CA60027305B /* STEmojiKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEmojiKeyboard.m; sourceTree = "<group>"; };
+		9C6FCCDB1B181CCA0027305B /* STEmojiCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STEmojiCollectionView.h; sourceTree = "<group>"; };
+		9C6FCCDC1B181CCA0027305B /* STEmojiCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STEmojiCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +100,7 @@
 		9C6FCCA21B1818750027305B /* STEmojiKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				9C6FCCC91B181C7F0027305B /* emoji keyboard */,
 				9C6FCCA71B1818750027305B /* AppDelegate.h */,
 				9C6FCCA81B1818750027305B /* AppDelegate.m */,
 				9C6FCCAA1B1818750027305B /* ViewController.h */,
@@ -117,6 +137,32 @@
 				9C6FCCBE1B1818750027305B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C6FCCC91B181C7F0027305B /* emoji keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FCCCA1B181C7F0027305B /* resource */,
+				9C6FCCD81B181CA60027305B /* STEmojiKeyboard.h */,
+				9C6FCCD91B181CA60027305B /* STEmojiKeyboard.m */,
+				9C6FCCD51B181C920027305B /* STEmoji.h */,
+				9C6FCCD61B181C920027305B /* STEmoji.m */,
+				9C6FCCDB1B181CCA0027305B /* STEmojiCollectionView.h */,
+				9C6FCCDC1B181CCA0027305B /* STEmojiCollectionView.m */,
+			);
+			path = "emoji keyboard";
+			sourceTree = "<group>";
+		};
+		9C6FCCCA1B181C7F0027305B /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FCCCB1B181C7F0027305B /* emoji.json */,
+				9C6FCCCC1B181C7F0027305B /* keyboard_btn_delete@2x.png */,
+				9C6FCCCD1B181C7F0027305B /* keyboard_btn_delete@3x.png */,
+				9C6FCCCE1B181C7F0027305B /* keyboard_preview_bg@2x.png */,
+				9C6FCCCF1B181C7F0027305B /* keyboard_preview_bg@3x.png */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +246,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6FCCAF1B1818750027305B /* Main.storyboard in Resources */,
+				9C6FCCD11B181C7F0027305B /* keyboard_btn_delete@2x.png in Resources */,
+				9C6FCCD41B181C7F0027305B /* keyboard_preview_bg@3x.png in Resources */,
+				9C6FCCD31B181C7F0027305B /* keyboard_preview_bg@2x.png in Resources */,
+				9C6FCCD21B181C7F0027305B /* keyboard_btn_delete@3x.png in Resources */,
 				9C6FCCB41B1818750027305B /* LaunchScreen.xib in Resources */,
+				9C6FCCD01B181C7F0027305B /* emoji.json in Resources */,
 				9C6FCCB11B1818750027305B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6FCCDD1B181CCA0027305B /* STEmojiCollectionView.m in Sources */,
+				9C6FCCDA1B181CA60027305B /* STEmojiKeyboard.m in Sources */,
 				9C6FCCAC1B1818750027305B /* ViewController.m in Sources */,
 				9C6FCCA91B1818750027305B /* AppDelegate.m in Sources */,
 				9C6FCCA61B1818750027305B /* main.m in Sources */,
+				9C6FCCD71B181C920027305B /* STEmoji.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STEmojiKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = STEmojiKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

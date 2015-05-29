@@ -7,16 +7,24 @@
 //
 
 #import "ViewController.h"
+#import "STEmojiKeyboard.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) UITextView *textView;
 @end
 
 @implementation ViewController
 
+- (void)loadView{
+    self.view = [UITextView new];
+    self.textView = (UITextView *)self.view;
+    self.textView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    STEmojiKeyboard *keyboard = [STEmojiKeyboard keyboard];
+    keyboard.textView = self.textView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
