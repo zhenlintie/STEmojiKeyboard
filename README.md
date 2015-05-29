@@ -12,6 +12,7 @@ keyboard.textView = self.textView;
 
 ##截图
 
+![](https://github.com/zhenlintie/STEmojiKeyboard/raw/master/screenshot.gif)
 ![](https://github.com/zhenlintie/STEmojiKeyboard/raw/master/screenshot1.PNG)
 ![](https://github.com/zhenlintie/STEmojiKeyboard/raw/master/screenshot2.PNG)
 ![](https://github.com/zhenlintie/STEmojiKeyboard/raw/master/screenshot3.PNG)
