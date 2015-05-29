@@ -211,7 +211,6 @@
 #pragma mark - text view delegate
 
 - (void)textViewDidChange:(UITextView *)textView{
-    self.sendButton.enabled = ![@"" isEqualToString:textView.text];
     [self layout];
 }
 
