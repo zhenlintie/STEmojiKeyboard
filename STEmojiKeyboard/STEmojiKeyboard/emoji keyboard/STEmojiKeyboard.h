@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STEmojiKeyboard : UIView <UIInputViewAudioFeedback>
+@interface STEmojiKeyboard : UIInputView <UIInputViewAudioFeedback>
 + (instancetype)keyboard;
 @property (strong, nonatomic) id<UITextInput> textView;
 @end

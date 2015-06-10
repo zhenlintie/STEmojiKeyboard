@@ -132,7 +132,13 @@
 
 @end
 
-@implementation STEmojiKeyboard
+@implementation STEmojiKeyboard{
+    BOOL _dataDidLoad;
+}
+
+- (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 + (instancetype)keyboard{
     static dispatch_once_t onceToken;
@@ -144,11 +150,11 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    if (self = [super initWithFrame:kSTEmojiKeyboardFrame]){
+    if (self = [super initWithFrame:kSTEmojiKeyboardFrame inputViewStyle:UIInputViewStyleKeyboard]){
         self.clipsToBounds = NO;
+        _dataDidLoad = NO;
         _emojiData = [STEmoji allEmojis];
         [self loadUI];
-        [_emojiPageView reloadData];
     }
     return self;
 }
@@ -210,6 +216,10 @@
         [(UITextField *)textView setInputView:self];
     }
     _textView = textView;
+    if (!_dataDidLoad){
+        [_emojiPageView reloadData];;
+        _dataDidLoad = YES;
+    }
 }
 
 #pragma mark - emoji delegate
