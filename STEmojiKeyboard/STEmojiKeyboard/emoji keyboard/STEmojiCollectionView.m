@@ -139,11 +139,15 @@
 
 #pragma mark - data
 
-- (void)reloadData{
+- (void)resetData{
     [_sectionViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [_sectionViews removeAllObjects];
     [_sectionTitleViews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [_sectionTitleViews removeAllObjects];
+}
+
+- (void)reloadData{
+    [self resetData];
     
     CGFloat sectionLeft = 0;
     for (int section = 0; section < [_emojiDelegate countOfEmojiPageSection]; section++){
@@ -329,6 +333,12 @@
         [self getEmojiFromCurrentLocation:^(CGPoint emojiCenterInSelf, NSString *emoji) {
             //            NSLog(@"结束点击: %@",emoji);
             if (emoji){
+                if (!_inPreviewing){
+                    [self showEmojiPreview];
+                }
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_inPreviewing?0:0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    _emojiPreview.hidden = YES;
+                });
                 [_emojiDelegate emojiDidClicked:emoji];
             }
         }];
@@ -336,7 +346,6 @@
     _beginTouch = NO;
     _inPreviewing = NO;
     self.scrollEnabled = YES;
-    _emojiPreview.hidden = YES;
 }
 
 #pragma mark - scroll delegate

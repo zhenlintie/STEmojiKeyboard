@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) id<STEmojiCollectionViewDelegate> emojiDelegate;
 
+- (void)resetData;
 - (void)reloadData;
 
 - (void)showSection:(NSInteger)section;
